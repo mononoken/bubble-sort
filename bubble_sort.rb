@@ -6,8 +6,9 @@ end
 
 def bubble_once(array)
   bubbled_array = array.dup
-  bubbled_array.each_with_index do |left_num, left_index|
+  bubbled_array.each_with_index do |orig_num, left_index|
     if  
+      left_num = bubbled_array[left_index]
       right_index = left_index + 1
       right_num = bubbled_array[right_index]
 
@@ -32,4 +33,5 @@ end
 
 test_array = [4,3,78,2,0,2]
 p test_array
+p bubble_once(test_array)
 p bubble_sort(test_array)
