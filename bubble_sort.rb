@@ -33,5 +33,4 @@ end
 
 test_array = [4,3,78,2,0,2]
 p test_array
-p bubble_once(test_array)
 p bubble_sort(test_array)
